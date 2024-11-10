@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+scroll-behavior: smooth;
+font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: rgb(90, 6, 90); 
+    --primary-color-light: #f6e8f6;
+    --secondary-color: orange; 
+    --text-gray: #666;
+}
+
+/* Header Styles */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--primary-color-light);
+    padding: 30px 20px;
+    z-index: 10; 
+}
+
+/* Navbar */
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+/* Styling for the logo */
+.logo {
+    font-size: 36px; 
+    font-weight: bold; 
+    color: var(--primary-color-light); 
+    background-color: var(--secondary-color); 
+    padding: 10px 20px; 
+    border-radius: 50%; 
+    display: inline-block; 
+    text-align: center; 
+    box-shadow: 0 4px 8px rgba(238, 35, 194, 0.2); 
+  }
+  
+  
+
+/* Navigation Links */
+.navlink {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+}
+
+
+.navlink.show {
+    display: block; 
+}
+
+.navlink li {
+    margin-left: 20px;
+}
+
+.navlink a {
+    color: var(--primary-color-light);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navlink a:hover {
+    color: var(--secondary-color);
+}
+
+/* Mobile Menu Icon */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: var(--primary-color-light);
+}
+
+/* Section Styling */
+section {
+    padding: 100px 80px; 
+}
+
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--primary-color);
+}
+
+/* Home Container */
+.home-container {
+    font-family: 'Poppins';
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 150px 0px;
+}
+
+/* Home Info */
+.home-info {
+    text-align: center;
+    color: var(--primary-color-light); 
+}
+
+/* Greeting Text */
+.home-info h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+/* Title Text */
+.home-info h1 {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+/* Home Button Container */
+.home-button {
+    margin-top: 30px;
+}
+
+/* Contact Button Styling */
+.cnt-btn {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 12px 30px;
+    color: var(--primary-color-light);
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.cnt-btn:hover {
+    background-color: var(--primary-color-light);
+    color: var(--secondary-color);
+    transform: translateY(-3px);
+}
+
+
+/* about style */
+
+/* About Section Container */
+.about-section {
+    background-color: var(--primary-color-light);
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* About Container Layout */
+.about-container {
+    max-width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* About Info Text */
+.about-info {
+    flex: 1;
+    text-align: justify;
+}
+
+/* Title and Description */
+.about-info h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    color: var(--text-gray);
+}
+
+/* Social Icons Container */
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: start;
+}
+
+/* Individual Social Icon */
+.social-icon {
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.social-icon:hover {
+    color: var(--secondary-color); 
+    transform: scale(1.1); 
+}
+
+/* Icon Sizes and Colors (Optional) */
+.social-icon i {
+    font-size: 28px; 
+    color: var(--primary-color); 
+}
+
+.social-icon i:hover {
+    color: var(--secondary-color); 
+}
+
+
+/* Photo Container */
+.my-photo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-photo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; 
+    padding: 20px;
+    object-fit: cover;
+    border: 4px solid var(--secondary-color); 
+}
+
+/* interest style */
+.interest-section {
+    position: relative;
+    padding: 100px 20px;
+    background-color: var(--primary-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container styling */
+  .interest-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .interest-section h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin-bottom: 100px;
+    color: var(--primary-color-light);
+    position: relative;
+    text-align: center;
+  }
+
+  .interest-section h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 6px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+  
+  /* Individual interest item styling */
+  .interest-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    width: 200px;
+    height: 300px;
+    background-color: var(--primary-color-light);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  /* Icon styling */
+  .interest-item i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+  }
+  
+  /* Text styling */
+  .interest-item h6 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    text-align: center;
+  }
+  .interest-item p {
+    margin-top: 6px;
+    font-size: 1rem;
+    color: var(--text-gray);
+    text-align: center;
+  }
+  
+  /* Hover effect */
+  .interest-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .interest-item {
+      width: 200px;
+    }
+
+     /* Container styling */
+    .interest-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .interest-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .interest-item {
+      width: 80%;
+    }
+  }
+  
+
+
+/* Contact Section */
+.contact-section {
+    background-color: var(--primary-color-light);
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Heading */
+.contact-container h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+/* Contact Item (Email & Phone) */
+.contact-item {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Icon Style */
+.contact-item i {
+    font-size: 20px;
+    color: var(--primary-color);
+}
+
+/* Social Icons Container */
+.cnt-social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Individual Social Icon */
+.cnt-social-icon {
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Icons */
+.cnt-social-icon:hover {
+    color: var(--secondary-color); 
+    transform: scale(1.1); 
+}
+
+
+.cnt-social-icon i {
+    font-size: 28px; 
+    color: var(--primary-color); 
+}
+
+.cnt-social-icon i:hover {
+    color: var(--secondary-color); 
+}
+
+/* Styling for the Quote Section */
+.quote {
+    background-color: var(--primary-color);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Quote and Author */
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the Quote Text */
+.quote-container h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--primary-color-light);
+    font-style: italic;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Styling the Author Text */
+.quote-container p {
+    font-size: 1.2rem;
+    color: var(--primary-color-light);
+    text-align: right;
+    font-weight: 200;
+    margin-top: 10px;
+}
+/* Footer Styles */
+footer {
+    background-color: rgb(90, 6, 90);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-content a {
+    color: #ffcc00; /* Link color */
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
+  }
+  
+
+@media (max-width: 767px) {
+
+    /* Header Styles */
+    header {
+        padding: 20px 5px;
+    }
+
+    .navlink {
+        position: absolute;
+        z-index: -1;
+        top: 90px;
+        right: 0;
+        background-color: var(--primary-color);
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        padding: 0px 30px;
+    }
+
+    .navlink.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    .home-info h1 {
+        font-size: 1.5rem;
+    }
+
+    .home-info h4 {
+        font-size: .9em;
+    }
+    
+    .cnt-btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+
+    /* about style */
+    .about-container {
+        position: relative;
+        top: 10px;
+        bottom: 10px;
+    }
+
+
+    .about-info h1 {
+        font-size: 28px;
+    }
+
+    .about-desc {
+        font-size: 14px;
+    }
+
+    .my-photo img {
+        width: 250px;
+        height: 250px;
+    }   
+
+    .contact-container h1 {
+        font-size: 28px;
+    }
+
+    .contact-item {
+        font-size: 16px;
+    }
+
+    .contact-item i {
+        font-size: 18px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+
+    .interest-item {
+        width: 200px;
+    }
+
+    /* Container styling */
+    .interest-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .quote-container {
+        max-width: 500px;
+    }
+    
+    /* Styling the Quote Text */
+    .quote-container h3 {
+        font-size: 1rem;
+    }
+    .quote-container p {
+        font-size: 1rem;
+    }
+}
